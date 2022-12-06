@@ -21,3 +21,6 @@ The `sfdx-project.json` file contains useful configuration information for your 
 Hello everyone.
 
 -Change in dev branch
+
+-change in dev branch, we publish
+-
