@@ -1,4 +1,16 @@
 trigger ContactTrigger on Contact (before insert, after insert, before update, after update) {
+   
+    if (Trigger.isBefore) {
+        if (Trigger.isUpdate) {
+            ContactTriggerHandler.updateContactValidation1(Trigger.New, Trigger.Old, Trigger.NewMap, Trigger.OldMap);
+
+        }
+    }
+
+   
+}
+    
+    /*
     if (Trigger.isBefore) {
         system.debug('we are in BEFORE Trigger. Not even Saved.');
         if (Trigger.isInsert) {
@@ -19,3 +31,4 @@ trigger ContactTrigger on Contact (before insert, after insert, before update, a
         }
     }
 }
+*/
