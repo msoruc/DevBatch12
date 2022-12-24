@@ -3,6 +3,7 @@ trigger ContactTrigger on Contact (before insert, after insert, before update, a
     if (Trigger.isBefore) {
         if (Trigger.isUpdate) {
             ContactTriggerHandler.updateContactValidation1(Trigger.New, Trigger.Old, Trigger.NewMap, Trigger.OldMap);
+            ContactTriggerHandler.updateContactValidation2(Trigger.New, Trigger.Old, Trigger.NewMap, Trigger.OldMap);
 
         }
     }
