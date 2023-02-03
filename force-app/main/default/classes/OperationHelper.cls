@@ -14,17 +14,17 @@ public class OperationHelper {
     }
 
     
-    public decimal smallestOutOfTwoNumbers(decimal x, decimal y, decimal z){
-        if (x<=y && x<=z){
-            system.debug(x + 'This is the smallest number');
-            return x;
+    public decimal smallestOutOfTwoNumbers(decimal a, decimal b, decimal c){
+        if (a<=b && a<=c){
+            system.debug(a + 'This is the smallest number');
+            return a;
         }
-        else if (y<=x && y<=z){
-            system.debug(z + ' This is the smallest number');
-            return y;
+        else if (b<=a && b<=c){
+            system.debug(c + ' This is the smallest number');
+            return b;
         }else{
-            system.debug(y + ' This is the smallest number');
-            return z;
+            system.debug(b + ' This is the smallest number');
+            return c;
         }
     }
 

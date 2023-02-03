@@ -1,6 +1,15 @@
 trigger CaseTrigger on Case (before insert, before update, after insert, after update) {
 
-    
+
+    if(trigger.isAfter && trigger.isInsert){
+
+        CaseTriggerHandler.createCase(Trigger.new);
+
+
+    }
+
+
+    /*
     system.debug('We are in the trigger');
 
     if(trigger.isBefore){
@@ -26,7 +35,7 @@ trigger CaseTrigger on Case (before insert, before update, after insert, after u
         }
     }
 
-    /*
+    
 
     list<case> listC = new list<case>();
 
