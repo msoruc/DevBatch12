@@ -1,0 +1,3 @@
+CovidInfoCallout.getCovidInfo();
+
+GetPostInfo.postPost();

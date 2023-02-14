@@ -43,3 +43,18 @@ RestCallouts.getEmployees();
 RestCallouts.getCasesUsingNC();
 
 RestCallouts.postAnimal();
+
+SoapCallouts.parksCallout('United States');
+
+SoapCallouts.doAdditions(2,3);
+
+SoapCallouts.doMultiplys(2,3);
+
+SoapCallouts.doSubtracts(2,3);
+
+SoapCallouts.doDivides(2,3);
+
+ Case newcase = [select id, Origin, Status from Case where id = '500Do000000x9j3IAA' Limit 1 ];
+    String jsonString = JSON.serialize(newcase);
+    system.debug(jsonString);
+

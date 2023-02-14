@@ -113,14 +113,14 @@ public with sharing class RestCallouts {
          return response;
     }
 
-    //'https://abcd142-dev-ed.my.salesforce.com/services/apexrest/Cases/5008a00001tJTqHAAW'
+    //'https://abcd142-dev-ed.my.salesforce.com/services/apexrest/Cases/500Do000000x9j3IAA'
     //Http Method: GET
 
     public static HttpResponse getCasesUsingNC(){
          //1. Prepare HTTPRequest and wrap all the necessary data in it
 
         HttpRequest request = new HttpRequest();
-        request.setEndpoint('callout:NC_Dev_Account/services/apexrest/Cases/5008a00001tJTqHAAW');
+        request.setEndpoint('callout:NC_Dev_Account/services/apexrest/Cases/500Do000000x9j3IAA');
         request.setMethod('GET');
 
          //2. Prepare internet
