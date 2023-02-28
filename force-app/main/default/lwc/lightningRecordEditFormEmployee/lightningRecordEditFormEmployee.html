@@ -1,0 +1,36 @@
+<template>
+    <lightning-card title="Lightning Record Edit Form - Employee" icon-name="standard:employee">
+        <div class="slds-var-m-around_medium">
+            <lightning-record-edit-form
+                object-api-name={objectName}
+                onsuccess={successHandler}>
+                <!-- input fields -->
+                <lightning-messages></lightning-messages>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col">
+                        <lightning-input-field field-name={fields.name}></lightning-input-field>
+                        <lightning-input-field field-name={fields.gender}></lightning-input-field>
+                        <lightning-input-field field-name={fields.email}></lightning-input-field>
+                    </div>
+                    <div class="slds-col">
+                        <lightning-input-field field-name={fields.designation}></lightning-input-field>
+                        <lightning-input-field field-name={fields.address}></lightning-input-field>
+                    </div>
+                </div>
+                <div class="slds-align_absolute-center slds-var-m-around_large">
+                    <lightning-button 
+                    label="Cancel"
+                    variant="neutral"
+                    type="reset"
+                    class="slds-var-m-right_x-small">
+                    </lightning-button>
+                    <lightning-button 
+                    label="Save"
+                    variant="brand"
+                    type="submit">
+                    </lightning-button>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>
