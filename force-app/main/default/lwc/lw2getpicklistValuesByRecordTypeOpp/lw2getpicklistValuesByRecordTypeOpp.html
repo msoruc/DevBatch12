@@ -1,0 +1,43 @@
+<template>
+    <lightning-card title="LWC 2 Get Picklist Values - OppInformation" icon-name="standard:opportunity">
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                label="Opportunity Name"
+                type="text"
+                onchange={changeHandler}
+                name="Name">
+            </lightning-input>
+            <lightning-combobox
+                label="Stage Name"
+                options={stageOptions}
+                name="StageName"
+                onchange={changeHandler}>
+            </lightning-combobox>
+            <lightning-combobox
+                label="Type"
+                options={typeOptions}
+                name="Type"
+                onchange={changeHandler}>
+            </lightning-combobox>
+            <div class="slds-p-top_x-small">
+                Thank for choosing the correct information.<br/>
+                You have entered;<br/>
+                <template if:true={selectedName}>
+                    <div>
+                        Opportunity Name: {selectedName}<br/>
+                    </div>
+                </template>
+                <template if:true={selectedStage}>
+                    <div>
+                        Stage Name: {selectedStage}<br/>
+                    </div>
+                </template>
+                <template if:true={selectedType}>
+                    <div>
+                        Opportunity Type: {selectedType}
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

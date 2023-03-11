@@ -1,0 +1,51 @@
+<template>
+    <lightning-card title="Lead Form" icon-name="standard:lead">
+        <div class="slds-var-m-around_medium">
+            <form class="leadform">
+                <lightning-input
+                    label="First Name"
+                    type="text"
+                    name="FirstName"
+                    onchange={changeHandler}>
+                </lightning-input>
+                <lightning-input
+                    label="Last Name"
+                    type="text"
+                    name="LastName"
+                    onchange={changeHandler}>
+                </lightning-input>
+                <lightning-input
+                    label="Email"
+                    type="email"
+                    name="Email"
+                    onchange={changeHandler}>
+                </lightning-input>
+                <lightning-input
+                    label="Phone"
+                    type="phone"
+                    name="Phone"
+                    onchange={changeHandler}>
+                </lightning-input>
+                <lightning-input
+                    label="Company"
+                    type="text"
+                    name="Company"
+                    onchange={changeHandler}>
+                </lightning-input>
+                <div class="slds-align_absolute-center slds-var-m-around_medium">
+                    <lightning-button
+                        label="Cancel"
+                        variant="neutral"
+                        onclick={cancelLead}
+                        class="slds-var-m-right_x-small">
+                    </lightning-button>
+                    <lightning-button
+                        label="Save"
+                        variant="brand"
+                        onclick={saveLead}>
+                    </lightning-button>
+                </div>
+             </form>
+        </div>
+    </lightning-card>
+</template>

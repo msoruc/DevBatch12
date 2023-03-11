@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Get Picklist Values By Record Type of Opp" icon-name="standard:opportunity">
+        <div class="slds-var-m-around_medium">
+            <lightning-combobox
+            label="Select Stage Name"
+            name="StageName"
+            options={stageNameOptions}
+            onchange={changeHandler}
+            ></lightning-combobox>
+            <br/>
+            <lightning-combobox
+            label="Select Lead Source"
+            name="LeadSource"
+            options={leadSourceOptions}
+            onchange={changeHandler}>
+            </lightning-combobox>
+            <template if:true={selectedStageName}>
+                Selected Stage Name is: {selectedStageName}
+            </template>
+            <br/>
+            <template if:true={selectedLeadSource}>
+                Selected Lead Source is: {selectedLeadSource}
+            </template>
+        </div>
+    </lightning-card>
+</template>
