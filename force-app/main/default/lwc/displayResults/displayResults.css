@@ -1,0 +1,15 @@
+.search-results {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: azure;
+    color: black;
+    padding: 2px;
+}
+
+.search-error {
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: azure;
+    color: darkred;
+    padding: 2px;
+}
