@@ -1,0 +1,21 @@
+.header {
+    color: coral;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    font-weight: bold;
+    padding: 6px;
+}
+
+.error {
+    color: crimson;
+    background-color: blanchedalmond;
+    padding: 6px;
+}
+
+.message {
+    color: green;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    font-weight: bold;
+    padding: 6px;
+}
